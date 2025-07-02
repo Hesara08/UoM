@@ -1,66 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <img src="images/image1.webp" alt="shopping_cart" class="shopping_cart">
-    <img src="images/image11.png" alt="coffee" class="coffee">
-    <img src="images/image12.png" alt="coffee2" class="coffee_2">
+    <title>Cafe Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>MocCafe</h1>
-
-    <div class="nav">
-        <a href="cafe.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-    </div>
-
-
-
-    <div class="P1">
-        <P>
-            Best quality coffee beans<br> for the best cofee brew
-        </P>
-    </div>
-
-    <div class="P2">
-        <P>
-            A cup is enough to give you enegry all day long
-        </P>
-    </div>
-
-    <button type="button" id="btn" onclick="showAlert()">Order Now</button>
-
-
-    
+    <header>
+        <div class="container header-flex">
+            <h1>Cafe Delight</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.google.com/maps" target="_blank">Find Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to <span>Cafe Delight</span></h2>
+                <p>Fresh brews, cozy vibes, and delicious treats await you.</p>
+                <a href="#menu" class="cta-btn">See Our Menu</a>
+            </div>
+        </section>
+        <section id="gallery" class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery">
+                <img src="images/img_1.jpeg" alt="Coffee_1">
+                <img src="images/img_2.jpeg" alt="Coffee_2">
+                <img src="images/img_3.jpeg" alt="Coffee_3">
+                <img src="images/img_4.jpeg" alt="Coffee_4">
+                <img src="images/img_5.jpeg" alt="Coffee_5">
+            </div>
+        </section>
+        <section id="menu" class="container">
+            <h2>Our Menu</h2>
+            <ul class="modern-list">
+                <li>Espresso</li>
+                <li>Cappuccino</li>
+                <li>Latte</li>
+                <li>Blueberry Muffin</li>
+                <li>Ham & Cheese Sandwich</li>
+            </ul>
+        </section>
+        <section id="specials" class="container">
+            <h2 class="animated-text">Today's Specials</h2>
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Mocha</td>
+                        <td>Rich chocolate & espresso</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Avocado Toast</td>
+                        <td>Fresh avocado on sourdough</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Carrot Cake</td>
+                        <td>Homemade, with cream cheese</td>
+                        <td>$2.50</td>
+                    </tr>
+                </table>
+            </div>
+            <button onclick="showSpecial()">Show Surprise Special</button>
+            <p id="specialMsg"></p>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-links">
+                <a href="mailto:info@cafedelight.com">
+                    <i class="fas fa-envelope"></i> <span>Email</span>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i> <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i> <span>Twitter</span>
+                </a>
+                <a href="https://www.google.com/maps" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> <span>Location</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cafe Delight</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
-<footer>
-    <p id="follow"><b>Follow us on:</b></p>
-    <a href="https://www.facebook.com/"><img src="images/image8.png" alt="facebook" class="facebook"></a>
-    <a href="https://www.instagram.com/"><img src="images/image9.jpg" alt="instagram" class="instagram"></a>
-    <a href="https://www.youtube.com/"><img src="images/image10.jpg" alt="youtube" class="youtube"></a>
-    <br>
-
-    <div class="contact">
-        <p><b>Contact Us:</b></p>
-        <p>Phone:+94123456789</p>
-        <p>Email:moccafe@gmail.com</p>
-    </div>
-
-    <div class="address">
-        <p><b>Address:</b></p>
-        <p>MocCafe, <br>123 Galle Road, <br>Colombo 03.
-        </p>
-    </div>
-
-    <p id="p5">© 2025 MocCafe. All Rights Reserved.</p>
-</footer>
-
 </html>
